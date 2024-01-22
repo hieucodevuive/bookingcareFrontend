@@ -1,0 +1,189 @@
+
+.home-header-container {
+    height: 100px;
+    width: 100%;
+    padding: 0 100px;
+
+    .home-header-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .left-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+
+            i {
+                color: gray;
+                cursor: pointer;
+            }
+
+            .header-logo {
+                width: 80%;
+                height: 55%;
+                background: url('../../assets/images/logo.png') center center no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+
+        .center-content {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .child-content {
+                width: 200px;
+                .sub-title {
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .right-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: gray;
+            font-size: 16px;
+            .support {
+                cursor: pointer;
+                i {
+                    padding: 3px;
+                }
+            }
+
+            .language {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 600;
+                .vietnamese {
+                    cursor: pointer;
+                    margin-right: 10px;
+
+                    &:hover {
+                       color: #f7d709;
+                    }
+                    &.active {
+                        color: #f7d709;
+                    }
+                }
+                .english {
+                    cursor: pointer;
+                    &:hover {
+                        color: #49bce2;
+                    }
+                    &.active {
+                        color: #49bce2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-header-banner {
+    background: url('../../assets/images/background.webp') center center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .up-banner {
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(rgba(126,126,126,0.5), rgba(255,255,255,0.2), rgba(255,255,255,0.01));
+    }
+    .banner-title1 {
+        font-size: 35px;
+        text-shadow: 2px 2px 2px #333;
+        color: white;
+        padding-top: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .banner-title2 {
+        font-size: 35px;
+        text-shadow: 2px 2px 2px #333;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        margin-bottom: 35px;
+    }
+    .banner-search {
+        width: 450px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: #f7d709;
+        i {
+            margin: 8px;
+        }
+        input {
+            height: 30px;
+            width: 350px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+    .banner-options {
+        margin-top: 150px;
+        height: 50%;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        // background-color: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.9),rgba(255,255,255,1));
+
+        .option {
+            color: white;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .option-title {
+                font-size: 16px;
+                margin-top: 5px;
+                height: 50px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover {
+                    color: #49bce2;
+                }
+            }
+            .option-icon {
+                background-color: white;
+                color: #49bce2;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                padding: 10px;
+                font-size: 35px;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    .bottom-banner {
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9), rgba(255,255,255,1));
+    }
+}
+
+.icon-size {
+    font-size: 30px;
+}
